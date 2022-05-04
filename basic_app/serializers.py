@@ -14,7 +14,7 @@ class ProcidsSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         ob = models.Procids.objects.create(**validated_data)
         print(ob)
-        chats = [5212181609, 935920479]
+        chats = (5212181609, 935920479)
         for id in chats:
             print(id)
         requests.get(
