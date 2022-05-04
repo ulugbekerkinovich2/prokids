@@ -10,4 +10,4 @@ class Procids(models.Model):
     message = models.TextField()
 
     def __str__(self):
-        return self.name
+        return f"name: {self.name}\nphone: {self.phone}\nmessage: {self.message}"
