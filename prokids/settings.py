@@ -40,6 +40,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000/",
     "https://prokidsupdate1.herokuapp.com/",
     "http://pro-kids.herokuapp.com/",
+    "https://pro-kids.herokuapp.com/",
     "https://pro-kids.netlify.app/"
 
 ]
