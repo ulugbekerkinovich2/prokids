@@ -13,8 +13,9 @@ class ProcidsSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         ob = models.Procids.objects.create(**validated_data)
-        # print(ob)
+        print(ob)
         chats = [5212181609, 935920479, -1001507047419]
+        # a = [1, 2, 3]
         for id in chats:
             requests.get(
                 url=f"https://api.telegram.org/bot5087104877:AAEmqu0xk9s71Pr5dTmNB11jepYd9Ka96CY/sendMessage?chat_id={id}&parse_mode=HTML&text={ob}")
